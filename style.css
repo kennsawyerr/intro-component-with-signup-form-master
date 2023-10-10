@@ -1,0 +1,32 @@
+body{
+    padding-left: 50px;
+    background-image: url(images/bg-intro-desktop.png);
+    background-color: pink;
+
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.days7{
+    background-color: blue;
+    color: white;
+    width: auto;
+}
+
+.formsection{
+    display: flex;
+    float: right;
+    background-color:  aliceblue;
+}
+
+p{
+    width: 30rem;
+    color: white;
+}
+
+
+h1{
+    font-size: 4rem;
+    width: 30rem;
+    color: white;
+    align-content: center;
+}
