@@ -43,7 +43,7 @@ body{
 .container{
     display: flex;
     justify-content: space-evenly;
-    border: 1px solid green;
+    
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
@@ -51,7 +51,9 @@ body{
 
 
 .days{
-    background-color: blue;
+    background-color: var(--Blue);
+    text-align: center;
+    padding: 15px 0;
     color: white;
     width: auto;
 }
@@ -95,4 +97,23 @@ h1{
     width: 30rem;
     color: white;
     align-content: center;
+}
+
+
+@media screen and (max-width:500px) {
+ .container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 470px;
+    margin: 0 auto;
+ }
+
+
+ h1{
+    font-size: 40px;
+    padding-top: 60px;
+    
+ }
+    
 }
