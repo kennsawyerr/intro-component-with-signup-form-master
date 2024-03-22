@@ -27,6 +27,10 @@
 
 body{
     
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
     background-image: url(images/bg-intro-desktop.png);
     background-color: pink;
     font-family: "Poppins", sans-serif;
@@ -38,6 +42,7 @@ body{
 
 .container{
     display: flex;
+    justify-content: space-evenly;
     border: 1px solid green;
     width: 100%;
     max-width: 1200px;
@@ -51,7 +56,9 @@ body{
     width: auto;
 }
 
-
+  b{
+    color: var(--Red);
+  }
  form{
     padding: 20px ;
     margin: 20px;
@@ -69,6 +76,18 @@ label, input , button{
     display: block;
     width: 100%;
     margin: 20px 0;
+    padding: 10px 0;
+    padding-inline-start: 10px;
+    font-size: var(--par-font-size);
+    border-radius: 6px;
+    border: 1px solid ;
+    }
+
+
+    button{
+       
+        color: white;
+        background-color: var(--Green);
     }
 
 h1{
