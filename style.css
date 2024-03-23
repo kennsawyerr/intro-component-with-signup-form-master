@@ -104,6 +104,14 @@ h1{
 }
 
 
+button{
+    cursor: pointer;
+}
+
+
+button:hover{
+    background-color: var(--GrayishBlue);
+}
 @media screen and (max-width:500px) {
  .container{
     display: flex;

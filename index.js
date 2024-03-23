@@ -13,4 +13,21 @@ const  passwordInput = document.getElementById("password")
 
 
 
+submitBtn.addEventListener("click", ()=> {
+ if (firstNameInput && lastNameInput && emailInput && passwordInput === "" 
+    ){ return }
+    else {
+        if (lastNameInput==="")[
+
+
+
+
+
+
+
+            
+        ]
+    }
+})
+
 
