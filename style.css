@@ -70,10 +70,14 @@ body{
 }
 
 p{
-    width: 30rem;
+    
     color: white;
 }
 
+
+.hero{
+    width: 30rem;
+}
 label, input , button{
     display: block;
     width: 100%;
@@ -94,7 +98,7 @@ label, input , button{
 
 h1{
     font-size: 4rem;
-    width: 30rem;
+ 
     color: white;
     align-content: center;
 }
@@ -121,7 +125,7 @@ h1{
  }
     
  p{
-    width: unset;
+    width: 100%;
  }
 }
 
