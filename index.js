@@ -1,6 +1,7 @@
 //declare vars
 
 const submitBtn = document.getElementById("submit");
+const displayEl = document.getElementById("display")
 const  firstNameInput = document.getElementById("first-name")
 const  lastNameInput = document.getElementById("last-name")
 const  emailInput = document.getElementById("email")
@@ -15,18 +16,17 @@ const  passwordInput = document.getElementById("password")
 
 submitBtn.addEventListener("click", ()=> {
  if (firstNameInput && lastNameInput && emailInput && passwordInput === "" 
-    ){ return }
+    ){ return errorMessage("Pls fill the form to continue") }
     else {
-        if (lastNameInput==="")[
-
-
-
-
-
-
-
-            
-        ]
+        if (lastNameInput===""){
+errorMessage("please input your last names")}  ;
+if (firstNameInput===""){
+  errorMessage("please input your first name")};
+  if (passwordInput===""){
+    errorMessage("please input your password")}
+    if (emailInput===""){
+      errorMessage("please input your email address")} 
+        
     }
 })
 
@@ -60,9 +60,7 @@ const showSubscribeClip = () => {
   successMessage.style.display = "block";
 };
 function errorMessage(info) {
-  htmlMessageViewer.innerHTML = `<p class="red">${info}</p>`;
-  inputVal.style.border = "1px solid hsl(4, 100%, 67%)";
-  inputVal.style.backgroundColor = "pink";
+c+
 }
 
 const successNotificationMessage = (message) => {
@@ -80,7 +78,8 @@ const dismissBtn = () => {
 
 */
 
-function errorMessage () {
-    
+function errorMessage (info) {
+
+  displayEl.textContent = info;
 }
 
