@@ -18,6 +18,7 @@ submitBtn.addEventListener("click", handleClick)
 
 function handleClick(event) {
   event.preventDefault()
+  const forbiddenArray = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}$/;
   
   if (firstNameInput.value ==="" && lastNameInput .value==="" && emailInput.value ==="" && passwordInput.value === "" 
   ){ return errorMessage("Pls fill the form to continue")}
